@@ -20,6 +20,9 @@
     Helvetica,
     Arial,
     sans-serif;
+
+  /* transitions */
+  --transition-300: 300ms ease-in-out;
 }
 
 /* adaptive units based on the viewport size */
@@ -37,9 +40,8 @@
   }
 }
 
-
-/* TODO: confirm if you're making using of all these */
 :root {
+  /* adaptive font-sizes */
   --f--1-min: 14.00;
   --f--1-max: 16.00;
   --step--1: calc(((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) * var(--fluid-bp));
@@ -55,6 +57,14 @@
   --f-3-min: 40.00;
   --f-3-max: 80.00;
   --step-3: calc(((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) * var(--fluid-bp));
+
+  /* adaptive padding */
+  --p-0-min: 14.00;
+  --p-0-max: 16.00;
+  --p-step-0: calc(((var(--p-0-min) / 16) * 1rem) + (var(--p-0-max) - var(--p-0-min)) * var(--fluid-bp));
+  --p-1-min: 16.00;
+  --p-1-max: 40.00;
+  --p-step-1: calc(((var(--p-1-min) / 16) * 1rem) + (var(--p-1-max) - var(--p-1-min)) * var(--fluid-bp));
 }
 
 *,
@@ -99,10 +109,30 @@ p {
   justify-content: center;
 }
 
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
 .flex-ai-c {
   align-items: center;
 }
 
 .flex-fd-c {
   flex-direction: column;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gray {
+  color: var(--color-pearl-dark-grey)
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
 }
