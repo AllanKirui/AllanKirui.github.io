@@ -27,7 +27,7 @@
 
 <style scoped>
 .hero {
-  margin-bottom: var(--m-step-0);
+  margin-bottom: var(--m-step-2);
 }
 
 .hero__text {
