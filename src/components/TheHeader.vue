@@ -15,6 +15,7 @@
 <style scoped>
 .header {
   width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 .nav {
