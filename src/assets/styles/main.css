@@ -168,4 +168,21 @@ a:hover {
 h2 {
   font-weight: 700;
   font-size: var(--step-2);
+  position: relative;
+  margin-bottom: var(--m-step-0);
+}
+
+h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 3.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -18px;
+  background: linear-gradient(to left,
+      var(--color-gray),
+      var(--color-pearl-dark-grey));
+  border-radius: 50px;
 }
