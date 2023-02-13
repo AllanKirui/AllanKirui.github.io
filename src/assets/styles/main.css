@@ -67,11 +67,23 @@
   --p-1-min: 16.00;
   --p-1-max: 40.00;
   --p-step-1: calc(((var(--p-1-min) / 16) * 1rem) + (var(--p-1-max) - var(--p-1-min)) * var(--fluid-bp));
+  --p-1-min: 16.00;
+  --p-1-max: 40.00;
+  --p-step-1: calc(((var(--p-1-min) / 16) * 1rem) + (var(--p-1-max) - var(--p-1-min)) * var(--fluid-bp));
 
   /* adaptive margin */
-  --m-0-min: 80.00;
-  --m-0-max: 120.00;
+  --m--1-min: 30.00;
+  --m--1-max: 50.00;
+  --m-step--1: calc(((var(--m--1-min) / 16) * 1rem) + (var(--m--1-max) - var(--m--1-min)) * var(--fluid-bp));
+  --m-0-min: 50.00;
+  --m-0-max: 70.00;
   --m-step-0: calc(((var(--m-0-min) / 16) * 1rem) + (var(--m-0-max) - var(--m-0-min)) * var(--fluid-bp));
+  --m-1-min: 60.00;
+  --m-1-max: 90.00;
+  --m-step-1: calc(((var(--m-1-min) / 16) * 1rem) + (var(--m-1-max) - var(--m-1-min)) * var(--fluid-bp));
+  --m-2-min: 80.00;
+  --m-2-max: 120.00;
+  --m-step-2: calc(((var(--m-2-min) / 16) * 1rem) + (var(--m-2-max) - var(--m-2-min)) * var(--fluid-bp));
 }
 
 *,
@@ -108,6 +120,10 @@ p {
   line-height: 1;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .flex {
   display: flex;
 }
@@ -139,8 +155,17 @@ a:hover {
   color: var(--color-pearl-dark-grey)
 }
 
+.semi-bold {
+  font-weight: 600;
+}
+
 .container {
   margin: 0 auto;
   max-width: 77.5rem;
   padding: 0 var(--p-step-1);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: var(--step-2);
 }
