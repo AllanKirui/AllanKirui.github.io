@@ -54,10 +54,6 @@
   margin-bottom: 2rem;
 }
 
-.hero__text-description .semi-bold {
-  font-weight: 600;
-}
-
 .hero__image img {
   max-width: 100%;
   height: 100%;
