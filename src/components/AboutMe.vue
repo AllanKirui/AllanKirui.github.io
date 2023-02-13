@@ -1,5 +1,7 @@
 <template>
   <section id="about" class="about">
+    <div class="about__images"></div>
+
     <div class="about__text">
       <h2 class="about__text-title">about <span class="gray">me</span></h2>
       <p class="about__text-description text-1">
@@ -41,11 +43,31 @@
 .about {
   margin-bottom: var(--m-step-2);
   text-align: center;
+  position: relative;
+}
+
+.about__images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("@/assets/img/logo-js.svg"),
+    url("@/assets/img/logo-vue.svg"), url("@/assets/img/logo-sass.svg"),
+    url("@/assets/img/logo-inkscape.svg"), url("@/assets/img/logo-db.svg"),
+    url("@/assets/img/logo-data.svg"), url("@/assets/img/logo-git.svg"),
+    url("@/assets/img/logo-github.svg");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 8% 30px, 92% 33px, left 45%, right 45%, 8% 80%, 92% 80%,
+    35% bottom, 65% bottom;
+  z-index: 1;
 }
 
 .about__text {
   max-width: 700px;
   margin: 0 auto;
+  padding-bottom: 8rem;
+  position: relative;
+  z-index: 2;
 }
 
 .about__text-title {
@@ -77,6 +99,7 @@
 .about__text-description.text-1 {
   margin-bottom: var(--m-step--1);
 }
+
 .about__text-description.text-2 {
   margin-bottom: 1.5rem;
 }
@@ -101,6 +124,16 @@
   color: var(--color-pearl-dark-grey);
   font-size: var(--step-0);
   line-height: 12px;
+}
+
+@media (max-width: 960px) {
+  .about__images {
+    display: none;
+  }
+
+  .about__text {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
