@@ -70,28 +70,6 @@
   z-index: 2;
 }
 
-.about__text-title {
-  position: relative;
-  margin-bottom: var(--m-step-0);
-}
-
-.about__text-title::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 6px;
-  width: 3.125rem;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -18px;
-  background: linear-gradient(
-    to left,
-    var(--color-gray),
-    var(--color-pearl-dark-grey)
-  );
-  border-radius: 50px;
-}
-
 .about__text-description {
   line-height: 1.5;
 }
