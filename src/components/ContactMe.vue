@@ -22,8 +22,7 @@
 
 <style scoped>
 .contact {
-  margin-bottom: var(--m-step-2);
-  min-height: 92vh;
+  height: 90vh;
   text-align: center;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .contact__text-description.text-1 {
-  max-width: 490px;
+  width: 31.25rem;
   margin: 0 auto;
   margin-bottom: var(--m-step--1);
 }
@@ -74,7 +73,7 @@
   }
 
   .contact__text-description.text-1 {
-    max-width: 100%;
+    width: 100%;
   }
 
   .contact__link {
