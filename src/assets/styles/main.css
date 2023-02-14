@@ -2,6 +2,7 @@
 
 :root {
   /* light theme colors */
+  --color-white: hsl(0, 0%, 100%);
   --color-cultured: hsl(0, 0%, 95%);
   --color-pearl-dark-grey: hsl(216, 2%, 51%);
   --color-gray: hsl(210, 3%, 75%);
@@ -25,6 +26,7 @@
 
   /* transitions */
   --transition-300: 300ms ease-in-out;
+  --transition-200: 200ms ease-in-out;
 }
 
 /* adaptive units based on the viewport size */
@@ -72,6 +74,9 @@
   --p-step-1: calc(((var(--p-1-min) / 16) * 1rem) + (var(--p-1-max) - var(--p-1-min)) * var(--fluid-bp));
 
   /* adaptive margin */
+  --m--2-min: 22.00;
+  --m--2-max: 30.00;
+  --m-step--2: calc(((var(--m--2-min) / 16) * 1rem) + (var(--m--2-max) - var(--m--2-min)) * var(--fluid-bp));
   --m--1-min: 30.00;
   --m--1-max: 50.00;
   --m-step--1: calc(((var(--m--1-min) / 16) * 1rem) + (var(--m--1-max) - var(--m--1-min)) * var(--fluid-bp));
@@ -118,6 +123,15 @@ h4,
 p {
   margin: 0;
   line-height: 1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2,
+h4 {
+  line-height: 1.4;
 }
 
 ul {
@@ -185,4 +199,14 @@ h2::before {
       var(--color-gray),
       var(--color-pearl-dark-grey));
   border-radius: 50px;
+}
+
+h4 {
+  font-size: var(--step-1);
+}
+
+small {
+  color: var(--color-pearl-dark-grey);
+  font-size: var(--step--1);
+  font-weight: 500;
 }
