@@ -70,10 +70,6 @@
   z-index: 2;
 }
 
-.about__text-description {
-  line-height: 1.5;
-}
-
 .about__text-description.text-1 {
   margin-bottom: var(--m-step--1);
 }
