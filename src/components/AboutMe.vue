@@ -3,7 +3,9 @@
     <div class="about__images"></div>
 
     <div class="about__text">
-      <h2 class="about__text-title">about <span class="gray">me</span></h2>
+      <h2 class="about__text-title">
+        about <span class="text-alt-color">me</span>
+      </h2>
       <p class="about__text-description text-1">
         My name is <span class="semi-bold">Allan</span>, and I'm
         <span class="semi-bold">from Kenya</span>. I've been learning how to

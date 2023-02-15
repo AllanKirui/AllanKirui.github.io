@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <nav class="nav flex flex-jc-sb flex-ai-c">
-      <a href="/" class="header__logo">a<span class="gray">k</span></a>
+      <a href="/" class="header__logo"
+        >a<span class="text-alt-color">k</span></a
+      >
 
       <div class="header__links">
         <a href="#about">about</a>

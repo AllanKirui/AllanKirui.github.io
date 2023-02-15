@@ -2,7 +2,7 @@
   <section id="contact" class="contact">
     <div class="contact__text">
       <h2 class="contact__text-title">
-        feel free to <span class="gray">contact me</span>
+        feel free to <span class="text-alt-color">contact me</span>
       </h2>
       <p class="contact__text-description text-1">
         Connect with me and let's build a world of websites together. I am

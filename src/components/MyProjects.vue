@@ -1,7 +1,8 @@
 <template>
   <section id="projects" class="projects">
     <h2 class="projects__title">
-      some things I've built and <span class="gray">helped build </span>
+      some things I've built and
+      <span class="text-alt-color">helped build</span>
     </h2>
 
     <div class="project__cards">

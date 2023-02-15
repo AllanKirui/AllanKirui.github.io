@@ -2,7 +2,9 @@
   <section class="hero flex flex-jc-sb flex-ai-c">
     <div class="hero__text">
       <p class="hero__text-greeting">Hi, my name is</p>
-      <p class="hero__text-name">Allan<span class="gray">Kirui</span>.</p>
+      <p class="hero__text-name">
+        Allan<span class="text-alt-color">Kirui</span>.
+      </p>
       <p class="hero__text-description text-1">
         Building creative designs for the web and having fun with code are my
         favorite things to do as
