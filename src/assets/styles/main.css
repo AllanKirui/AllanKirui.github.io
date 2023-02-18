@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
 
 :root {
-  /* light theme colors */
-  --color-white: hsl(0, 0%, 100%);
-  --color-cultured: hsl(0, 0%, 95%);
-  --color-pearl-dark-grey: hsl(216, 2%, 51%);
-  --color-gray: hsl(210, 3%, 75%);
-  --color-black-brown: hsl(345, 6%, 13%);
-
-  /* dark theme colors */
-  --color-blanched-almond: hsl(37, 100%, 90%);
-  --color-granite-grey: hsl(0, 0%, 40%);
-  --color-rich-black: hsl(211, 66%, 7%);
-  --color-tumbleweed: hsl(13, 50%, 69%);
-
   /* fonts */
   --font-family: "Karla",
     -apple-system,
@@ -27,6 +14,72 @@
   /* transitions */
   --transition-300: 300ms ease-in-out;
   --transition-200: 200ms ease-in-out;
+}
+
+:root {
+  /* light theme preferences */
+  --bg-color: hsl(0, 0%, 95%);
+  --text-color: hsl(345, 6%, 13%);
+  --text-alt-color: hsl(216, 2%, 51%);
+  --heading-underline: linear-gradient(to left,
+      hsl(210, 3%, 75%),
+      hsl(216, 2%, 51%));
+
+  --nav-link-color: hsl(216, 2%, 51%);
+  --nav-link-underline-color: linear-gradient(to left,
+      hsl(210, 3%, 75%),
+      hsl(216, 2%, 51%));
+
+  --about-bg-images-set: url("@/assets/img/about/logo-js.svg"),
+    url("@/assets/img/about/logo-vue.svg"),
+    url("@/assets/img/about/logo-sass.svg"),
+    url("@/assets/img/about/logo-inkscape.svg"),
+    url("@/assets/img/about/logo-db.svg"),
+    url("@/assets/img/about/logo-data.svg"),
+    url("@/assets/img/about/logo-git.svg"),
+    url("@/assets/img/about/logo-github.svg");
+
+  --project-card-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --project-link-bg-color: hsl(0, 0%, 100%);
+  --project-link-text-color: hsl(345, 6%, 13%);
+
+  --cta-bg-color: hsl(345, 6%, 13%);
+  --cta-text-color: hsl(0, 0%, 95%);
+  --cta-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --cta-hover-bg-color: hsl(0, 0%, 100%);
+  --cta-hover-text-color: hsl(345, 6%, 13%);
+  --cta-outline-color: hsl(345, 6%, 13%);
+}
+
+[data-theme="dark"] {
+  /* dark theme preferences */
+  --bg-color: hsl(211, 66%, 7%);
+  --text-alt-color: hsl(13, 50%, 69%);
+  --text-color: hsl(37, 100%, 90%);
+  --heading-underline: hsl(13, 50%, 69%);
+
+  --nav-link-color: hsl(13, 50%, 69%);
+  --nav-link-underline-color: hsl(37, 100%, 90%);
+
+  --about-bg-images-set: url("@/assets/img/about/logo-js-dark.svg"),
+    url("@/assets/img/about/logo-vue-dark.svg"),
+    url("@/assets/img/about/logo-sass-dark.svg"),
+    url("@/assets/img/about/logo-inkscape-dark.svg"),
+    url("@/assets/img/about/logo-db-dark.svg"),
+    url("@/assets/img/about/logo-data-dark.svg"),
+    url("@/assets/img/about/logo-git-dark.svg"),
+    url("@/assets/img/about/logo-github-dark.svg");
+
+  --project-card-shadow: rgba(18, 30, 43, 0.5) 0px 8px 24px;
+  --project-link-bg-color: hsl(37, 100%, 90%);
+  --project-link-text-color: hsl(211, 66%, 7%);
+
+  --cta-bg-color: hsl(37, 100%, 90%);
+  --cta-text-color: hsl(211, 66%, 7%);
+  --cta-shadow: rgba(18, 30, 43, 0.5) 0px 8px 24px;
+  --cta-hover-bg-color: hsl(13, 50%, 69%);
+  --cta-hover-text-color: hsl(211, 66%, 7%);
+  --cta-outline-color: hsl(13, 50%, 69%);
 }
 
 /* adaptive units based on the viewport size */
@@ -110,8 +163,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--step-0);
   line-height: 1.6;
-  background-color: var(--color-cultured);
-  color: var(--color-black-brown);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -166,7 +219,7 @@ a:hover {
 }
 
 .text-alt-color {
-  color: var(--color-pearl-dark-grey)
+  color: var(--text-alt-color)
 }
 
 .semi-bold {
@@ -195,9 +248,7 @@ h2::before {
   left: 50%;
   transform: translateX(-50%);
   bottom: -18px;
-  background: linear-gradient(to left,
-      var(--color-gray),
-      var(--color-pearl-dark-grey));
+  background: var(--heading-underline);
   border-radius: 50px;
 }
 
@@ -206,7 +257,7 @@ h4 {
 }
 
 small {
-  color: var(--color-pearl-dark-grey);
+  color: var(--text-alt-color);
   font-size: var(--step--1);
   font-weight: 500;
 }
