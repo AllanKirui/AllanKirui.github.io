@@ -52,18 +52,18 @@
   display: inline-block;
   padding: 0.75rem 2rem;
   border-radius: 10px;
-  background-color: var(--color-black-brown);
-  color: var(--color-cultured);
+  background-color: var(--cta-bg-color);
+  color: var(--cta-text-color);
   font-size: var(--step-1);
   font-weight: 500;
   transition: all var(--transition-200);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: var(--cta-shadow);
 }
 
 .contact__link .cta:hover {
-  background-color: var(--color-white);
-  color: var(--color-black-brown);
-  outline: 1px solid var(--color-black-brown);
+  background-color: var(--cta-hover-bg-color);
+  color: var(--cta-hover-text-color);
+  outline: 1px solid var(--cta-outline-color);
   outline-offset: 5px;
 }
 
