@@ -52,11 +52,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("@/assets/img/logo-js.svg"),
-    url("@/assets/img/logo-vue.svg"), url("@/assets/img/logo-sass.svg"),
-    url("@/assets/img/logo-inkscape.svg"), url("@/assets/img/logo-db.svg"),
-    url("@/assets/img/logo-data.svg"), url("@/assets/img/logo-git.svg"),
-    url("@/assets/img/logo-github.svg");
+  background-image: var(--about-bg-images-set);
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: 8% 30px, 92% 33px, left 45%, right 45%, 8% 80%, 92% 80%,
@@ -97,7 +93,7 @@
   top: 50%;
   left: -1.375rem;
   transform: translateY(-50%);
-  color: var(--color-pearl-dark-grey);
+  color: var(--text-alt-color);
   font-size: var(--step-0);
   line-height: 12px;
 }
