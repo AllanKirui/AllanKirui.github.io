@@ -5,6 +5,15 @@
         >a<span class="text-alt-color">k</span></a
       >
 
+      <!-- theme toggle -->
+      <div class="header__toggler">
+        <input
+          ref="check"
+          type="checkbox"
+          @change="$emit('change-theme', this.$refs.check)"
+        />
+      </div>
+
       <div class="header__links">
         <a href="#about">about</a>
         <a href="#projects">projects</a>
@@ -13,6 +22,21 @@
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    preCheckDarkToggle() {
+      if (document.documentElement.getAttribute("data-theme") === "dark") {
+        this.$refs.check.checked = true;
+      }
+    },
+  },
+  mounted() {
+    this.preCheckDarkToggle();
+  },
+};
+</script>
 
 <style scoped>
 .header {
@@ -50,17 +74,14 @@
   left: 0;
   right: 0;
   bottom: -24px;
-  background: linear-gradient(
-    to right,
-    var(--color-gray),
-    var(--color-pearl-dark-grey)
-  );
+  background: var(--nav-link-underline-color);
+  border-radius: 50px;
   opacity: 0;
   transition: opacity var(--transition-300);
 }
 
 .header__links a:hover {
-  color: var(--color-pearl-dark-grey);
+  color: var(--nav-link-color);
 }
 
 .header__links a:hover::before {
