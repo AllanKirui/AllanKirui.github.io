@@ -18,6 +18,14 @@
 
     <div class="hero__image">
       <img
+        v-if="preferredTheme === 'dark'"
+        src="@/assets/img/hero-dark.png"
+        width="600"
+        height="600"
+        alt="Allan's avatar"
+      />
+      <img
+        v-else
         src="@/assets/img/hero-light.png"
         width="600"
         height="600"
@@ -26,6 +34,25 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: ["theme"],
+  data() {
+    return {
+      preferredTheme: null,
+    };
+  },
+  watch: {
+    theme(newTheme) {
+      this.preferredTheme = newTheme;
+    },
+  },
+  beforeMount() {
+    this.preferredTheme = document.documentElement.getAttribute("data-theme");
+  },
+};
+</script>
 
 <style scoped>
 .hero {
