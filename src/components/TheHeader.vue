@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" ref="header">
     <nav class="nav flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo"
         >a<span class="text-alt-color">k</span></a
@@ -78,9 +78,33 @@ export default {
     checkWindowSize() {
       window.addEventListener("resize", this.closeMenu);
     },
+    checkWindowScrollPosition() {
+      const headerEl = this.$refs.header;
+      let lastScrollPosY = 0;
+
+      window.addEventListener("scroll", () => {
+        let currentScrollPosY = window.scrollY;
+
+        // hide the header while scrolling down
+        if (currentScrollPosY > lastScrollPosY) {
+          headerEl.style.top = `-${headerEl.clientHeight}px`;
+
+          // show the header if the mobile menu is open
+          if (this.isMenuOpen) {
+            headerEl.style.top = 0;
+          }
+        } else {
+          // show the header while scrolling up
+          headerEl.style.top = 0;
+        }
+
+        lastScrollPosY = currentScrollPosY;
+      });
+    },
   },
   mounted() {
     this.preCheckDarkToggle();
+    this.checkWindowScrollPosition();
   },
   beforeUpdate() {
     this.checkWindowSize();
@@ -92,7 +116,12 @@ export default {
 .header {
   width: 100%;
   margin-bottom: 2.5rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: var(--header-bg-color);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-300);
+  z-index: 4;
 }
 
 .nav {
