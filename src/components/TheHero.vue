@@ -56,6 +56,7 @@ export default {
 
 <style scoped>
 .hero {
+  margin-top: 123px;
   margin-bottom: var(--m-step-2);
 }
 
