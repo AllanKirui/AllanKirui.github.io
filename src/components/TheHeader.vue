@@ -14,22 +14,55 @@
         <span class="toggle"></span>
       </label>
 
-      <div class="header__links">
+      <div class="header__links hide-for-small">
         <a href="#about">about</a>
         <a href="#projects">projects</a>
         <a href="#contact">contact</a>
       </div>
+
+      <button
+        type="button"
+        aria-label="Toggle menu"
+        :class="[isMenuOpen ? 'open' : '', 'header__burger hide-for-large']"
+        @click="toggleMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+
+    <div
+      :class="[
+        isMenuOpen ? 'open' : '',
+        'header__menu flex flex-fd-c hide-for-large',
+      ]"
+    >
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+      <small>Designed & Built by Allan Kirui.</small>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
   methods: {
     preCheckDarkToggle() {
       if (document.documentElement.getAttribute("data-theme") === "dark") {
         this.$refs.check.checked = true;
       }
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+
+      document.body.classList.toggle("no-scroll");
     },
   },
   mounted() {
@@ -42,6 +75,7 @@ export default {
 .header {
   width: 100%;
   margin-bottom: 2.5rem;
+  position: relative;
 }
 
 .nav {
@@ -61,6 +95,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .header__toggler input[type="checkbox"] {
@@ -147,6 +182,96 @@ export default {
   opacity: 1;
 }
 
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.header__burger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-alt-color);
+  transition: all var(--transition-300);
+  transform-origin: 2.3px 1.2px;
+}
+
+.header__burger span:nth-child(1) {
+  width: 20px;
+}
+
+.header__burger span:nth-child(2) {
+  width: 15px;
+}
+
+.header__burger span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__burger.open span:nth-child(1) {
+  width: 22px;
+  transform-origin: right center;
+  transform: translateY(0.6px) rotate(-45deg);
+}
+
+.header__burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.open span:nth-child(3) {
+  width: 22px;
+  transform-origin: right center;
+  transform: translateY(2.5px) rotate(45deg);
+}
+
+.header__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 6rem 2rem;
+  background-color: var(--bg-alt-color);
+  border-radius: 50rem 0 50rem 50rem;
+  transform-origin: top right;
+  transform: scale(0);
+  visibility: hidden;
+  transition: all var(--transition-300);
+  z-index: 2;
+}
+
+.header__menu.open {
+  transform: scale(1);
+  border-radius: 0;
+  visibility: visible;
+}
+
+.header__menu a {
+  padding: 0.625rem;
+  text-align: center;
+  font-size: var(--step-1);
+}
+
+.header__menu a:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__menu a:hover {
+  color: var(--nav-link-color);
+}
+
+.header__menu small {
+  margin: auto auto 0 auto;
+  transition: color var(--transition-300);
+}
+
 @media (max-width: 768px) {
   .header__toggler .toggle {
     width: 2.5rem;
@@ -166,6 +291,18 @@ export default {
 
   .header__toggler .toggle::after {
     right: 2px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-for-large {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-for-small {
+    display: none;
   }
 }
 </style>
