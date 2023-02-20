@@ -28,6 +28,7 @@
   --scrollbar-thumb-color: hsl(210, 3%, 75%);
   --scrollbar-track-color: hsl(0, 0%, 95%);
 
+  --header-bg-color: rgba(242, 242, 242, 0.8);
   --nav-link-color: hsl(216, 2%, 51%);
   --nav-link-underline-color: linear-gradient(to left,
       hsl(210, 3%, 75%),
@@ -64,6 +65,7 @@
   --scrollbar-thumb-color: hsl(13, 50%, 69%);
   --scrollbar-track-color: hsl(211, 66%, 7%);
 
+  --header-bg-color: rgb(6, 17, 30, .8);
   --nav-link-color: hsl(13, 50%, 69%);
   --nav-link-underline-color: hsl(37, 100%, 90%);
 
