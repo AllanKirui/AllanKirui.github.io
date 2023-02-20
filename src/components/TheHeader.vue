@@ -64,9 +64,26 @@ export default {
 
       document.body.classList.toggle("no-scroll");
     },
+    closeMenu() {
+      let viewportWidth = window.innerWidth;
+
+      if (viewportWidth > 768) {
+        // remove "no-scroll" class on body
+        document.body.classList.remove("no-scroll");
+
+        // close mobile menu if it was open
+        this.isMenuOpen = false;
+      }
+    },
+    checkWindowSize() {
+      window.addEventListener("resize", this.closeMenu);
+    },
   },
   mounted() {
     this.preCheckDarkToggle();
+  },
+  beforeUpdate() {
+    this.checkWindowSize();
   },
 };
 </script>
