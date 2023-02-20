@@ -25,6 +25,8 @@
   --heading-underline: linear-gradient(to left,
       hsl(210, 3%, 75%),
       hsl(216, 2%, 51%));
+  --scrollbar-thumb-color: hsl(210, 3%, 75%);
+  --scrollbar-track-color: hsl(0, 0%, 95%);
 
   --nav-link-color: hsl(216, 2%, 51%);
   --nav-link-underline-color: linear-gradient(to left,
@@ -59,6 +61,8 @@
   --text-alt-color: hsl(13, 50%, 69%);
   --text-color: hsl(37, 100%, 90%);
   --heading-underline: hsl(13, 50%, 69%);
+  --scrollbar-thumb-color: hsl(13, 50%, 69%);
+  --scrollbar-track-color: hsl(211, 66%, 7%);
 
   --nav-link-color: hsl(13, 50%, 69%);
   --nav-link-underline-color: hsl(37, 100%, 90%);
@@ -268,4 +272,16 @@ small {
   color: var(--text-alt-color);
   font-size: var(--step--1);
   font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: initial;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
 }
