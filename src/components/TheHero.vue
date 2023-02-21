@@ -1,10 +1,10 @@
 <template>
   <section class="hero flex flex-jc-sb flex-ai-c">
     <div class="hero__text">
-      <p class="hero__text-greeting">Hi, my name is</p>
-      <p class="hero__text-name">
+      <h1 class="hero__text-greeting">Hi, my name is</h1>
+      <h3 class="hero__text-name">
         Allan<span class="text-alt-color">Kirui</span>.
-      </p>
+      </h3>
       <p class="hero__text-description text-1">
         Building creative designs for the web and having fun with code are my
         favorite things to do as
@@ -66,6 +66,8 @@ export default {
 
 .hero__text-greeting {
   margin-bottom: 2rem;
+  font-size: var(--step-0);
+  font-weight: normal;
 }
 
 .hero__text-name {
