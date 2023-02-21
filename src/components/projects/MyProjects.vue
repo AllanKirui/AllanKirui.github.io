@@ -25,7 +25,7 @@
 <script>
 import data from "@/projects-data";
 
-import ProjectItem from "@/components/ProjectItem";
+import ProjectItem from "@/components/projects/ProjectItem";
 
 export default {
   components: {

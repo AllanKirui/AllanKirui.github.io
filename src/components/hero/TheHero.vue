@@ -19,14 +19,14 @@
     <div class="hero__image">
       <img
         v-if="preferredTheme === 'dark'"
-        src="@/assets/img/hero-dark.png"
+        src="@/assets/img/hero/hero-dark.png"
         width="600"
         height="600"
         alt="Allan's avatar"
       />
       <img
         v-else
-        src="@/assets/img/hero-light.png"
+        src="@/assets/img/hero/hero-light.png"
         width="600"
         height="600"
         alt="Allan's avatar"
