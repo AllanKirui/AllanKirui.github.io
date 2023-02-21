@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import TheHeader from "@/components/TheHeader";
-import TheHero from "@/components/TheHero";
-import AboutMe from "@/components/AboutMe";
-import MyProjects from "@/components/MyProjects";
-import ContactMe from "@/components/ContactMe";
-import TheFooter from "@/components/TheFooter";
+import TheHeader from "@/components/nav/TheHeader";
+import TheHero from "@/components/hero/TheHero";
+import AboutMe from "@/components/about/AboutMe";
+import MyProjects from "@/components/projects/MyProjects";
+import ContactMe from "@/components/contact/ContactMe";
+import TheFooter from "@/components/footer/TheFooter";
 
 export default {
   name: "App",
