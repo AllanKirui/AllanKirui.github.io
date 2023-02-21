@@ -6,6 +6,7 @@
         :alt="'image for Allan\'s ' + title + ' project'"
         width="500"
         height="280"
+        loading="lazy"
       />
     </div>
 
