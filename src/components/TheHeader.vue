@@ -152,8 +152,8 @@ export default {
 .header__toggler .toggle {
   position: relative;
   display: block;
-  width: 3.125rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 22px;
   background-color: hsl(210, 3%, 75%);
   border-radius: 50px;
   cursor: pointer;
@@ -169,15 +169,15 @@ export default {
 .header__toggler .toggle::after {
   content: "";
   position: absolute;
-  top: 3px;
-  width: 1.125rem;
-  height: 1.125rem;
+  top: 2.5px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   transition: 0.5s;
 }
 
 .header__toggler .toggle::before {
-  left: 3px;
+  left: 2.5px;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -186,7 +186,7 @@ export default {
 }
 
 .header__toggler .toggle::after {
-  right: 3px;
+  right: 2.5px;
   background: hsl(211, 66%, 7%);
   transform: translateX(50px);
 }
@@ -316,28 +316,6 @@ export default {
 .header__menu small {
   margin: auto auto 0 auto;
   transition: color var(--transition-300);
-}
-
-@media (max-width: 768px) {
-  .header__toggler .toggle {
-    width: 2.5rem;
-    height: 20px;
-  }
-
-  .header__toggler .toggle::before,
-  .header__toggler .toggle::after {
-    top: 2px;
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .header__toggler .toggle::before {
-    left: 2px;
-  }
-
-  .header__toggler .toggle::after {
-    right: 2px;
-  }
 }
 
 @media (min-width: 769px) {
