@@ -1,7 +1,7 @@
 <template>
   <header class="header" ref="header">
     <nav class="nav flex flex-jc-sb flex-ai-c">
-      <a href="/" class="header__logo"
+      <a href="/" class="header__logo" aria-label="home"
         >a<span class="text-alt-color">k</span></a
       >
 
@@ -134,6 +134,7 @@ export default {
 .header__logo {
   font-size: 2rem;
   font-weight: 700;
+  z-index: 3;
 }
 
 .header__toggler {
