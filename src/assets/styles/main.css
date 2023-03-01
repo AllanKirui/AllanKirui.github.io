@@ -287,3 +287,16 @@ small {
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-color);
 }
+
+.fade-in {
+  position: relative;
+  top: 150px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  position: relative;
+  top: 0;
+  opacity: 1;
+}
