@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact">
+  <section id="contact" class="contact fade-in" ref="contact">
     <div class="contact__text">
       <h2 class="contact__text-title">
         feel free to <span class="text-alt-color">contact me</span>
@@ -19,6 +19,22 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  inject: ["fadeHandler"],
+  methods: {
+    showFadingElement() {
+      const fadingEl = this.$refs.contact;
+      const fadingPoint = 150; // pixel value
+      this.fadeHandler(fadingEl, fadingPoint);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.showFadingElement);
+  },
+};
+</script>
 
 <style scoped>
 .contact {

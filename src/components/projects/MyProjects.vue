@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="projects">
+  <section id="projects" class="projects fade-in" ref="projects">
     <h2 class="projects__title">
       some things I've built and
       <span class="text-alt-color">helped build</span>
@@ -31,10 +31,21 @@ export default {
   components: {
     ProjectItem,
   },
+  inject: ["fadeHandler"],
   data() {
     return {
       projectsData: data,
     };
+  },
+  methods: {
+    showFadingElement() {
+      const fadingEl = this.$refs.projects;
+      const fadingPoint = 150; // pixel value
+      this.fadeHandler(fadingEl, fadingPoint);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.showFadingElement);
   },
 };
 </script>
