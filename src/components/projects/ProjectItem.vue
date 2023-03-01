@@ -43,6 +43,7 @@
           <a
             :href="repoLink"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="view GitHub repository"
           >
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -62,7 +63,12 @@
         </li>
 
         <li class="live-site-link" v-if="liveLink">
-          <a :href="liveLink" target="_blank" aria-label="view live site">
+          <a
+            :href="liveLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="view live site"
+          >
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg
               width="24"
