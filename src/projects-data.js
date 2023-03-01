@@ -79,7 +79,7 @@ export default [
   },
   {
     title:
-      "Learning to Code on a 12 Year Old Machine - A Journey of Patience and Perserverance",
+      "Learning to Code on a 12 Year Old Machine - A Journey of Patience and Perseverance",
     tag: null,
     description:
       "I blog about my journey as a self-taught developer and the challenges I've faced while learning how to code.",
