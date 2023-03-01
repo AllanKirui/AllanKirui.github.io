@@ -1,6 +1,6 @@
 <template>
-  <section id="about" class="about">
-    <div class="about__images"></div>
+  <section id="about" class="about fade-in" ref="about">
+    <div class="about__images" ref="images"></div>
 
     <div class="about__text">
       <h2 class="about__text-title">
@@ -41,6 +41,30 @@
   </section>
 </template>
 
+<script>
+export default {
+  inject: ["fadeHandler"],
+  methods: {
+    showFadingElement() {
+      const fadingEl = this.$refs.about;
+      const fadingPoint = 150; // pixel value
+      this.fadeHandler(fadingEl, fadingPoint);
+
+      // fade in the bg images separately
+      this.showFadingImages();
+    },
+    showFadingImages() {
+      const fadingImagesEl = this.$refs.images;
+      const fadingPoint = 100; // pixel value
+      this.fadeHandler(fadingImagesEl, fadingPoint);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.showFadingElement);
+  },
+};
+</script>
+
 <style scoped>
 .about {
   margin-bottom: var(--m-step-2);
@@ -50,6 +74,8 @@
 
 .about__images {
   position: absolute;
+  top: 100px;
+  opacity: 0;
   width: 100%;
   height: 100%;
   background-image: var(--about-bg-images-set);
@@ -58,6 +84,12 @@
   background-position: 8% 30px, 92% 33px, left 45%, right 45%, 8% 80%, 92% 80%,
     35% bottom, 65% bottom;
   z-index: 1;
+  transition: all 2s ease;
+}
+
+.about__images.visible {
+  top: 0;
+  opacity: 1;
 }
 
 .about__text {

@@ -1,5 +1,5 @@
 <template>
-  <div class="project__cards-item flex flex-jc-sb">
+  <div class="project__cards-item flex flex-jc-sb" ref="projectCard">
     <div class="card-image">
       <img
         :src="require(`@/assets/img/projects/${img}`)"
@@ -96,6 +96,17 @@ export default {
     "img",
     "isCollab",
   ],
+  inject: ["fadeHandler"],
+  methods: {
+    showFadingProject() {
+      const fadingProjectEl = this.$refs.projectCard;
+      const fadingPoint = 80; // pixel value
+      this.fadeHandler(fadingProjectEl, fadingPoint);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.showFadingProject);
+  },
 };
 </script>
 
@@ -103,6 +114,15 @@ export default {
 .project__cards-item {
   padding: 0 var(--p-step-1);
   gap: 2rem;
+  position: relative;
+  top: 80px;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.project__cards-item.visible {
+  top: 0;
+  opacity: 1;
 }
 
 .project__cards-item:not(:last-child) {
