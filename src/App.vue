@@ -76,6 +76,25 @@ export default {
         document.documentElement.setAttribute("data-theme", "light");
       }
     },
+    fadeHandler(el, revealPoint) {
+      // takes in an element and a desired reveal point
+      const fadingEl = el;
+      let windowHeight = window.innerHeight;
+      let fadingElTop = fadingEl.getBoundingClientRect().top;
+      let fadingPoint = revealPoint;
+
+      // check if the top position of the fadingEl meets the requirements to show or hide it
+      if (fadingElTop < windowHeight - fadingPoint) {
+        fadingEl.classList.add("visible");
+      } else {
+        fadingEl.classList.remove("visible");
+      }
+    },
+  },
+  provide() {
+    return {
+      fadeHandler: this.fadeHandler,
+    };
   },
   created() {
     // check if the user has set a theme preference
