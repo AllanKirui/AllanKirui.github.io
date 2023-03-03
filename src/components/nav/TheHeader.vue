@@ -82,18 +82,21 @@ export default {
       document.body.classList.toggle("no-scroll");
     },
     closeMenu() {
+      // remove "no-scroll" class on body
+      document.body.classList.remove("no-scroll");
+
+      // close mobile menu if it was open
+      this.isMenuOpen = false;
+    },
+    closeMenuOnResize() {
       let viewportWidth = window.innerWidth;
 
       if (viewportWidth > 768) {
-        // remove "no-scroll" class on body
-        document.body.classList.remove("no-scroll");
-
-        // close mobile menu if it was open
-        this.isMenuOpen = false;
+        this.closeMenu();
       }
     },
     checkWindowSize() {
-      window.addEventListener("resize", this.closeMenu);
+      window.addEventListener("resize", this.closeMenuOnResize);
     },
     checkWindowScrollPosition() {
       const headerEl = this.$refs.header;
