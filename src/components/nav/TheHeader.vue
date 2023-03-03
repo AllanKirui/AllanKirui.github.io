@@ -18,6 +18,16 @@
         <a href="#about">about</a>
         <a href="#projects">projects</a>
         <a href="#contact">contact</a>
+
+        <div class="resume-btn-wrapper">
+          <a
+            href="/allankirui-resume.pdf"
+            class="resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >resume</a
+          >
+        </div>
       </div>
 
       <button
@@ -41,6 +51,13 @@
       <a href="#about">about</a>
       <a href="#projects">projects</a>
       <a href="#contact">contact</a>
+      <a
+        href="/allankirui-resume.pdf"
+        class="resume-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >resume</a
+      >
       <small>Designed & Built by Allan Kirui.</small>
     </div>
   </header>
@@ -229,6 +246,26 @@ export default {
   opacity: 1;
 }
 
+.header__links .resume-btn-wrapper {
+  display: inline;
+}
+
+.header__links a.resume-btn {
+  background-color: var(--resume-btn-bg-color);
+  color: var(--resume-btn-text-color);
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background-color var(--transition-300);
+}
+
+.header__links a.resume-btn::before {
+  display: none;
+}
+
+.header__links a.resume-btn:hover {
+  background-color: var(--resume-btn-bg-alt-color);
+}
+
 .header__burger {
   display: flex;
   flex-direction: column;
@@ -319,13 +356,13 @@ export default {
   transition: color var(--transition-300);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
   .hide-for-large {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .hide-for-small {
     display: none;
   }
