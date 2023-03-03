@@ -48,14 +48,15 @@
         'header__menu flex flex-fd-c hide-for-large',
       ]"
     >
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#contact">contact</a>
+      <a href="#about" @click="closeMenu">about</a>
+      <a href="#projects" @click="closeMenu">projects</a>
+      <a href="#contact" @click="closeMenu">contact</a>
       <a
         href="/allankirui-resume.pdf"
         class="resume-btn"
         target="_blank"
         rel="noopener noreferrer"
+        @click="closeMenu"
         >resume</a
       >
       <small>Designed & Built by Allan Kirui.</small>
