@@ -16,7 +16,7 @@ export default [
     title: "Vue Movies",
     tag: "solo project",
     description:
-      "A movie database I designed to get some practice with the topics I was learning about Vue at the time. The site gives users suggestions for movies and TV shows in either the popular or top rated catergories. Users can also perform searches based these two categories.",
+      "A movie database I designed to get some practice with the topics I was learning about Vue at the time. The site gives users suggestions for movies and TV shows in either the popular or top rated categories. Users can also perform searches based these two categories.",
     about: ["Vue", "Routing", "API Integration"],
     links: {
       live: "https://allankirui.github.io/vue-movies",
