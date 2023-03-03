@@ -33,6 +33,9 @@
   --nav-link-underline-color: linear-gradient(to left,
       hsl(210, 3%, 75%),
       hsl(216, 2%, 51%));
+  --resume-btn-bg-color: hsl(345, 6%, 13%);
+  --resume-btn-bg-alt-color: hsl(210, 3%, 75%);
+  --resume-btn-text-color: hsl(0, 0%, 100%);
 
   --about-bg-images-set: url("@/assets/img/about/logo-js.svg"),
     url("@/assets/img/about/logo-vue.svg"),
@@ -68,6 +71,9 @@
   --header-bg-color: rgb(6, 17, 30, .8);
   --nav-link-color: hsl(13, 50%, 69%);
   --nav-link-underline-color: hsl(37, 100%, 90%);
+  --resume-btn-bg-color: hsl(37, 100%, 90%);
+  --resume-btn-bg-alt-color: hsl(13, 50%, 69%);
+  --resume-btn-text-color: hsl(211, 66%, 7%);
 
   --about-bg-images-set: url("@/assets/img/about/logo-js-dark.svg"),
     url("@/assets/img/about/logo-vue-dark.svg"),
