@@ -324,7 +324,8 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: -webkit-fill-available;
   padding: 6rem 2rem;
   background-color: var(--bg-alt-color);
   border-radius: 50rem 0 50rem 50rem;
