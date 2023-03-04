@@ -2,6 +2,8 @@
 
 This is the first iteration of my portfolio. It showcases some of the projects I've built and helped build.
 
+Inspiration was drawn from [brittanychiang.com](https://brittanychiang.com/)
+
 ### Links 🔗
 
 View it here: [Allan Kirui's Portfolio](https://allankirui.github.io/)
