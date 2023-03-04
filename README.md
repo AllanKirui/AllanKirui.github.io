@@ -1,24 +1,14 @@
-# portfolio
+# Allan Kirui's Portfolio v1
 
-## Project setup
-```
-npm install
-```
+This is the first iteration of my portfolio that showcases some of the projects I've built and helped build.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Links 🔗
 
-### Compiles and minifies for production
-```
-npm run build
-```
+View it here: [Allan Kirui's Portfolio](https://allankirui.github.io/)
 
-### Lints and fixes files
-```
-npm run lint
-```
+<br/>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Author ✍🏾
+
+- Github - [Allan Kirui](https://allankirui.github.io/)
+- Email - <allan.kirui@outlook.com>
