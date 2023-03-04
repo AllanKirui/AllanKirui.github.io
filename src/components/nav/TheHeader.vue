@@ -357,7 +357,7 @@ export default {
 }
 
 .header__menu small {
-  margin: auto auto 0 auto;
+  margin: auto auto 100px auto;
   transition: color var(--transition-300);
 }
 
