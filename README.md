@@ -1,6 +1,6 @@
 # Allan Kirui's Portfolio v1
 
-This is the first iteration of my portfolio that showcases some of the projects I've built and helped build.
+This is the first iteration of my portfolio. It showcases some of the projects I've built and helped build.
 
 ### Links 🔗
 
