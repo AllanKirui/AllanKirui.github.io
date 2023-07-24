@@ -23,19 +23,22 @@
         </ul>
         <ul class="about__text-skills skills-2">
           <li>SASS</li>
+          <li>Tailwind</li>
           <li>Vue</li>
-          <li>SQL Basics</li>
         </ul>
         <ul class="about__text-skills skills-3">
+          <li>PHP Basics</li>
+          <li>SQL Basics</li>
+          <li>Responsive Design</li>
+        </ul>
+        <ul class="about__text-skills skills-4">
           <li>Git</li>
           <li>GitHub</li>
-          <li>Responsive Design</li>
         </ul>
       </div>
       <p class="about__text-description text-3">
         I am currently diving deeper into the VueJS ecosystem whilst learning
-        how to interact with databases using SQL and the importance of data
-        structures and algorithms through JavaScript.
+        backend interactions with MySQL and PHP.
       </p>
     </div>
   </section>
