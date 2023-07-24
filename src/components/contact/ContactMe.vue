@@ -10,7 +10,7 @@
       </p>
       <p class="contact__text-description text-2">
         Feel free to also just <span class="semi-bold">say hi</span> and I'll
-        try me best to get back to you soon!
+        try my best to get back to you soon!
       </p>
     </div>
 
