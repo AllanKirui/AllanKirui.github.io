@@ -4,7 +4,7 @@ export default [
     tag: "solo project",
     description:
       "An updated version of a notes app I had created with vanilla JavaScript. It features a better UI/UX flow compared to the earlier version and intergrates with Firebase to facilitate user authentication and persistance of user data across devices.",
-    about: ["Vue", "Vuex", "Firebase"],
+    about: ["Vue", "Vuex", "Options API", "Firebase"],
     links: {
       live: "https://allankirui.github.io/your-notes-v2",
       repo: "https://github.com/AllanKirui/your-notes-v2",
@@ -17,7 +17,7 @@ export default [
     tag: "solo project",
     description:
       "A movie database I designed to get some practice with the topics I was learning about Vue at the time. The site gives users suggestions for movies and TV shows in either the popular or top rated categories. Users can also perform searches based these two categories.",
-    about: ["Vue", "Routing", "API Integration"],
+    about: ["Vue", "Options API", "Routing", "API Integration"],
     links: {
       live: "https://allankirui.github.io/vue-movies",
       repo: "https://github.com/AllanKirui/vue-movies",
@@ -43,7 +43,7 @@ export default [
     tag: "solo project",
     description:
       "A project I created earlier on when I was learning the basics of Vue. The goal of the project was to get some practice with creating components and to better understand how components communicate with each other.",
-    about: ["Vue", "Components"],
+    about: ["Vue", "Components", "Options API"],
     links: {
       live: "https://allankirui.github.io/vue-color-picker",
       repo: "https://github.com/AllanKirui/vue-color-picker",
