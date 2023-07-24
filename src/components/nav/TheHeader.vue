@@ -21,7 +21,7 @@
 
         <div class="resume-btn-wrapper">
           <a
-            href="/allankirui-resume.pdf"
+            href="/allan-kirui-resume.pdf"
             class="resume-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +52,7 @@
       <a href="#projects" @click="closeMenu">projects</a>
       <a href="#contact" @click="closeMenu">contact</a>
       <a
-        href="/allankirui-resume.pdf"
+        href="/allan-kirui-resume.pdf"
         class="resume-btn"
         target="_blank"
         rel="noopener noreferrer"
