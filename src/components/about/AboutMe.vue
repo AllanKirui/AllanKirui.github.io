@@ -37,9 +37,9 @@
         </ul>
       </div>
       <p class="about__text-description text-3">
-        I am currently delving into Laravel, a powerful PHP framework designed
-        for web application development whilst learning how to build beautiful
-        frontends with React.
+        I am currently exploring backend development with Laravel and learning
+        to build beautiful frontends with React, both of which excite me for
+        their potential in creating robust and scalable web applications.
       </p>
     </div>
   </section>
