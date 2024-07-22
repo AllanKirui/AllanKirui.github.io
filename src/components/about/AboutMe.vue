@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="about fade-in" ref="about">
-    <div class="about__images" ref="images"></div>
+    <div class="about__images floating-icons" ref="images"></div>
 
     <div class="about__text">
       <h2 class="about__text-title">

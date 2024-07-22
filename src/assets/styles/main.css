@@ -350,3 +350,13 @@ small {
   top: 0;
   opacity: 1;
 }
+
+.floating-icons {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(1rem);
+  }
+}
