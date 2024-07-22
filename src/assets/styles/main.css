@@ -333,6 +333,8 @@ small {
 }
 
 ::-webkit-scrollbar-thumb {
+  border: 4px solid var(--scrollbar-track-color);
+  border-radius: 1000px;
   background: var(--scrollbar-thumb-color);
 }
 
