@@ -1,5 +1,18 @@
 export default [
   {
+    title: "Calculate It",
+    tag: "solo project",
+    description:
+      "Having built previous Vue apps using the Options API, I wanted to gain hands-on experience with the Composition API. From concept to code, creating this calculator app with Vue's Composition API was a rewarding journey.",
+    about: ["Vue", "Composition API", "Tailwind"],
+    links: {
+      live: "https://allankirui.github.io/calculate-it",
+      repo: "https://github.com/AllanKirui/calculate-it"
+    },
+    img: "8-calculate-it.png",
+    isCollab: false
+  },
+  {
     title: "Your Notes v2",
     tag: "solo project",
     description:
@@ -7,10 +20,10 @@ export default [
     about: ["Vue", "Vuex", "Options API", "Firebase"],
     links: {
       live: "https://allankirui.github.io/your-notes-v2",
-      repo: "https://github.com/AllanKirui/your-notes-v2",
+      repo: "https://github.com/AllanKirui/your-notes-v2"
     },
     img: "1-yournotes-v2.png",
-    isCollab: false,
+    isCollab: false
   },
   {
     title: "Vue Movies",
@@ -20,10 +33,10 @@ export default [
     about: ["Vue", "Options API", "Routing", "API Integration"],
     links: {
       live: "https://allankirui.github.io/vue-movies",
-      repo: "https://github.com/AllanKirui/vue-movies",
+      repo: "https://github.com/AllanKirui/vue-movies"
     },
     img: "2-vue-movies.png",
-    isCollab: false,
+    isCollab: false
   },
   {
     title: "The Frontend",
@@ -33,10 +46,10 @@ export default [
     about: ["HTML", "SASS", "CSS Grid", "JavaScript"],
     links: {
       live: "https://allankirui.github.io/the-frontend",
-      repo: "https://github.com/AllanKirui/the-frontend",
+      repo: "https://github.com/AllanKirui/the-frontend"
     },
     img: "3-the-frontend.png",
-    isCollab: false,
+    isCollab: false
   },
   {
     title: "Vue Color Picker",
@@ -46,10 +59,10 @@ export default [
     about: ["Vue", "Components", "Options API"],
     links: {
       live: "https://allankirui.github.io/vue-color-picker",
-      repo: "https://github.com/AllanKirui/vue-color-picker",
+      repo: "https://github.com/AllanKirui/vue-color-picker"
     },
     img: "4-color-picker.png",
-    isCollab: false,
+    isCollab: false
   },
   {
     title: "Social Proof",
@@ -59,10 +72,10 @@ export default [
     about: ["HTML", "CSS", "Git", "GitHub", "Collaboration"],
     links: {
       live: "https://practical-tereshkova-8c641d.netlify.app/",
-      repo: "https://github.com/AllanKirui/social-proof",
+      repo: "https://github.com/AllanKirui/social-proof"
     },
     img: "5-social-proof.png",
-    isCollab: true,
+    isCollab: true
   },
   {
     title: "Loopstudios",
@@ -72,10 +85,10 @@ export default [
     about: ["HTML", "CSS", "Git", "GitHub", "Collaboration"],
     links: {
       live: "https://hungry-kilby-fc41c0.netlify.app/",
-      repo: "https://github.com/AllanKirui/loopstudios-landing-page",
+      repo: "https://github.com/AllanKirui/loopstudios-landing-page"
     },
     img: "6-loopstudios.png",
-    isCollab: true,
+    isCollab: true
   },
   {
     title:
@@ -86,9 +99,9 @@ export default [
     about: ["Grit", "Humor"],
     links: {
       live: "https://allankirui.github.io/my-journey",
-      repo: null,
+      repo: null
     },
     img: "7-blog.png",
-    isCollab: false,
-  },
-];
+    isCollab: false
+  }
+]
