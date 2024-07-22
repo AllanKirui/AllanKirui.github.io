@@ -86,8 +86,6 @@ export default {
       // check if the top position of the fadingEl meets the requirements to show or hide it
       if (fadingElTop < windowHeight - fadingPoint) {
         fadingEl.classList.add("visible");
-      } else {
-        fadingEl.classList.remove("visible");
       }
     },
   },
