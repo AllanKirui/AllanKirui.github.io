@@ -9,7 +9,7 @@
       <p class="about__text-description text-1">
         My name is <span class="semi-bold">Allan</span>, and I'm
         <span class="semi-bold">from Kenya</span>. I've been learning how to
-        code for a while now and have grown a passion for front-end web
+        code for a while now and have grown a passion for frontend web
         development.
       </p>
       <p class="about__text-description text-2">
@@ -28,8 +28,8 @@
         </ul>
         <ul class="about__text-skills skills-3">
           <li>PHP Basics</li>
-          <li>SQL Basics</li>
-          <li>Responsive Design</li>
+          <li>Laravel Basics</li>
+          <li>React</li>
         </ul>
         <ul class="about__text-skills skills-4">
           <li>Git</li>
@@ -37,8 +37,9 @@
         </ul>
       </div>
       <p class="about__text-description text-3">
-        I am currently diving deeper into the VueJS ecosystem whilst learning
-        backend interactions with MySQL and PHP.
+        I am currently delving into Laravel, a powerful PHP framework designed
+        for web application development whilst learning how to build beautiful
+        frontends with React.
       </p>
     </div>
   </section>
@@ -49,23 +50,23 @@ export default {
   inject: ["fadeHandler"],
   methods: {
     showFadingElement() {
-      const fadingEl = this.$refs.about;
-      const fadingPoint = 150; // pixel value
-      this.fadeHandler(fadingEl, fadingPoint);
+      const fadingEl = this.$refs.about
+      const fadingPoint = 150 // pixel value
+      this.fadeHandler(fadingEl, fadingPoint)
 
       // fade in the bg images separately
-      this.showFadingImages();
+      this.showFadingImages()
     },
     showFadingImages() {
-      const fadingImagesEl = this.$refs.images;
-      const fadingPoint = 100; // pixel value
-      this.fadeHandler(fadingImagesEl, fadingPoint);
-    },
+      const fadingImagesEl = this.$refs.images
+      const fadingPoint = 100 // pixel value
+      this.fadeHandler(fadingImagesEl, fadingPoint)
+    }
   },
   mounted() {
-    window.addEventListener("scroll", this.showFadingElement);
-  },
-};
+    window.addEventListener("scroll", this.showFadingElement)
+  }
+}
 </script>
 
 <style scoped>
