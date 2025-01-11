@@ -35,7 +35,7 @@
   --resume-btn-bg-alt-color: hsl(210, 3%, 75%);
   --resume-btn-text-color: hsl(0, 0%, 100%);
 
-  --about-bg-images-set: url("@/assets/img/about/logo-js.svg"),
+  --about-bg-images-set: url("@/assets/img/about/logo-react.svg"),
     url("@/assets/img/about/logo-vue.svg"),
     url("@/assets/img/about/logo-tailwind.svg"),
     url("@/assets/img/about/logo-inkscape.svg"),
@@ -73,7 +73,7 @@
   --resume-btn-bg-alt-color: hsl(13, 50%, 69%);
   --resume-btn-text-color: hsl(211, 66%, 7%);
 
-  --about-bg-images-set: url("@/assets/img/about/logo-js-dark.svg"),
+  --about-bg-images-set: url("@/assets/img/about/logo-react-dark.svg"),
     url("@/assets/img/about/logo-vue-dark.svg"),
     url("@/assets/img/about/logo-tailwind-dark.svg"),
     url("@/assets/img/about/logo-inkscape-dark.svg"),
