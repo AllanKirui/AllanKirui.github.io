@@ -1,5 +1,17 @@
 export default [
   {
+    title: "Brain Bender",
+    tag: "solo project",
+    description: "A Sudoku app built with React and TypeScript.",
+    about: ["React", "TypeScript", "Tailwind"],
+    links: {
+      live: "https://allankirui.github.io/brain-bender",
+      repo: "https://github.com/AllanKirui/brain-bender"
+    },
+    img: "9-brain-bender.png",
+    isCollab: false
+  },
+  {
     title: "Calculate It",
     tag: "solo project",
     description:
